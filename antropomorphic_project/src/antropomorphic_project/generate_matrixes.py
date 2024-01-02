@@ -1,10 +1,3 @@
-"""
-Find the Denavit-Hartenberg parameters for all three joints.
-Compute the Homogeneous Matrix for transforming from Frame 0 to Frame 3.
-Save all the Homogeneous matrixes, simplified, in png files (as shown in this course).
-The matrixes that have to be generated are: A0_1,A1_2,A2_3, A0_3, A1_3.
-This script is recomended to be in a class
-"""
 from sympy import Matrix, cos, sin, Symbol, simplify, trigsimp, N
 from sympy.interactive import printing
 from sympy import preview
@@ -82,19 +75,11 @@ if __name__=='__main__':
     preview(matrix.A01, viewer='file', filename='A01.png', dvioptions=['-D','300'])
     preview(matrix.A12, viewer='file', filename='A12.png', dvioptions=['-D','300'])
     preview(matrix.A23, viewer='file', filename='A23.png', dvioptions=['-D','300'])
-
-    preview(matrix.A03, viewer='file', filename='A03.png', dvioptions=['-D','300'])
     preview(matrix.A13, viewer='file', filename='A13.png', dvioptions=['-D','300'])
+    preview(matrix.A03_simplify, viewer='file', filename='A03.png', dvioptions=['-D','300'])
+    preview(matrix.A13_simplify, viewer='file', filename='A13.png', dvioptions=['-D','300'])
 
-
-    preview(matrix.A01_simplify, viewer='file', filename='A01_simplify.png', dvioptions=['-D','300'])
-    preview(matrix.A12_simplify, viewer='file', filename='A12_simplify.png', dvioptions=['-D','300'])
-    preview(matrix.A23_simplify, viewer='file', filename='A23_simplify.png', dvioptions=['-D','300'])
-
-    preview(matrix.A03_simplify, viewer='file', filename='A03_simplify.png', dvioptions=['-D','300'])
-    preview(matrix.A13_simplify, viewer='file', filename='A13_simplify.png', dvioptions=['-D','300'])
-
-    print('Generating finished.')
+    print('Generation complete. Saved in /catkin_ws/Axy.png.')
 
 
 
