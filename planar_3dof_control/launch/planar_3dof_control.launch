@@ -1,0 +1,23 @@
+<launch>
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find planar_3dof_control)/config/planar_3dof_control.yaml" command="load"/>
+
+  <!-- load the controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+	output="screen" ns="/planar_3dof" args="joint_state_controller
+					  joint1_position_controller
+					  joint2_position_controller
+            joint3_position_controller"/>
+            
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+	respawn="false" output="screen">
+    <remap from="/joint_states" to="/planar_3dof/joint_states" />
+  </node>
+
+
+  <include file="$(find planar_3dof_control)/launch/planar_3dof_ee_tf_listener.launch"/>
+
+</launch>

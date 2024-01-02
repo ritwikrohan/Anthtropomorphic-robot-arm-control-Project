@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>planar_3dof_control</name>
+  <version>0.0.0</version>
+  <description>The planar_3dof_control package</description>
+
+  <maintainer email="tgrip@todo.todo">tgrip</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>message_generation</build_depend> 
+  <build_depend>controller_manager</build_depend>
+  <build_depend>effort_controllers</build_depend>
+  <build_depend>joint_state_controller</build_depend>
+  <build_depend>robot_state_publisher</build_depend>
+  <build_depend>rqt_gui</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  
+  <build_export_depend>message_runtime</build_export_depend>
+  <build_export_depend>controller_manager</build_export_depend>
+  <build_export_depend>effort_controllers</build_export_depend>
+  <build_export_depend>joint_state_controller</build_export_depend>
+  <build_export_depend>robot_state_publisher</build_export_depend>
+  <build_export_depend>rqt_gui</build_export_depend>
+  <build_export_depend>geometry_msgs</build_export_depend>
+
+
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>effort_controllers</exec_depend>
+  <exec_depend>joint_state_controller</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rqt_gui</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>
