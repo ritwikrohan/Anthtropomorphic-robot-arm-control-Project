@@ -161,6 +161,8 @@ catkin_install_python(PROGRAMS
   src/antropomorphic_project/generate_matrixes.py
   src/antropomorphic_project/fk_antropomorphic_arm.py
   src/antropomorphic_project/ik_antropomorphic_arm.py
+  src/antropomorphic_project/antropomorphic_end_effector_mover.py
+  scripts/elipsoidal_motion.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
