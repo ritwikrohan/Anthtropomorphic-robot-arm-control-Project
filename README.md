@@ -16,9 +16,6 @@ Implementation of forward and inverse kinematics for an anthropomorphic (human-l
 
 </div>
 
-
-*3-DOF anthropomorphic arm executing elliptical trajectory tracking with real-time inverse kinematics control*
-
 ## Key Features
 
 - **Analytical Inverse Kinematics**: Closed-form solution for 3-DOF anthropomorphic arm
