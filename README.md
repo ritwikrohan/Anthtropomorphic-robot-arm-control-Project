@@ -8,7 +8,13 @@ Implementation of forward and inverse kinematics for an anthropomorphic (human-l
 
 ## Demo
 
-![Anthropomorphic Arm Control](https://i.imgflip.com/a496rz.gif)
+<div align="center">
+
+![Anthropomorphic Arm Control](https://i.imgflip.com/a498wt.gif)
+
+*3-DOF anthropomorphic arm executing elliptical trajectory tracking with real-time inverse kinematics control*
+
+</div>
 
 
 *3-DOF anthropomorphic arm executing elliptical trajectory tracking with real-time inverse kinematics control*
